@@ -22,7 +22,7 @@ jobs:
     runs-on: ${{ matrix.runner }}
     strategy:
       matrix:
-        runner: [ubuntu-cloud-runner, ubuntu-latest]
+        runner: [ubuntu-latest]
         node: [16, 18, 20]
         python: ["3.9", "3.10", "3.12"]
 
