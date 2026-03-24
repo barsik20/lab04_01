@@ -24,7 +24,7 @@ jobs:
       matrix:
         runner: [ubuntu-cloud-runner, ubuntu-latest]
         node: [16, 18, 20]
-        python: [3.9, 3.10, 3.12]
+        python: ["3.9", "3.10", "3.12"]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
