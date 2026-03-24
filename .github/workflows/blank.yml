@@ -23,8 +23,8 @@ jobs:
     strategy:
       matrix:
         runner: [ubuntu-latest]
-        node: [16, 18, 20]
-        python: ["3.9", "3.10", "3.12"]
+        node: [16, 18]
+        python: ["3.9", "3.10"]
         include:
         - runner: ubuntu-latest
           node: 24
@@ -56,7 +56,9 @@ jobs:
       - name: node-version
         run: node --version > node-version.txt 
       - name: arhiv
-        run: tar -czf versions.tar.gz python-version.txt node-version.txt 
+        run: tar -czf versions.tar.gz python-version.txt node-version.txt
+      - name: findd
+        run: find / -name versions.tar.gz
       - uses: actions/download-artifact@v8
         with:
           path: ./versions.tar.gz
