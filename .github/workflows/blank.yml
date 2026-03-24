@@ -45,7 +45,7 @@ jobs:
         with:
           python-version: ${{matrix.python}}
       - name: python-version
-        run: puthon --version
+        run: python --version
       - name: node-version
         run: node --version
       # Runs a set of commands using the runners shell
