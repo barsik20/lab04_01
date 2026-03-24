@@ -57,8 +57,8 @@ jobs:
         run: node --version > node-version.txt 
       - name: arhiv
         run: tar -czf versions.tar.gz python-version.txt node-version.txt
-      - name: findd
-        run: find / -name versions.tar.gz
+      #- name: findd
+        #run: find / -name versions.tar.gz
       - uses: actions/download-artifact@v8
         with:
           path: /home/runner/work/lab04_01/lab04_01/versions.tar.gz
