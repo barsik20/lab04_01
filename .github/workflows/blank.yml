@@ -26,7 +26,7 @@ jobs:
         node: [16, 18, 20]
         python: ["3.9", "3.10", "3.12"]
         include:
-          - runner: ubuntu-latest
+          - runner: [ubuntu-latest]
           - node: 24
           - python: '3.11'
     # Steps represent a sequence of tasks that will be executed as part of the job
